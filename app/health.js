@@ -8,5 +8,5 @@ export const handler = async (event, context) => {
     }, 2000);
   });
 
-  return Response(200, body);
+  return Response(200, { status: body });
 };
