@@ -1,0 +1,34 @@
+{
+  "name": "PaymentGateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosemaPereira/PaymentGateway.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosemaPereira/PaymentGateway/issues"
+  },
+  "homepage": "https://github.com/JosemaPereira/PaymentGateway#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "serverless": "^1.53.0",
+    "serverless-offline": "^5.12.0",
+    "serverless-webpack": "^5.3.1",
+    "webpack": "^4.41.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}

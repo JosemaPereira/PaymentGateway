@@ -1,0 +1,26 @@
+service: PaymentGateway
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+
+functions:
+  health:
+    handler: app/health.handler
+    events:
+      - http:
+          path: /
+          method: get
+
+custom:
+  webpack:
+    webpackConfig: webpack.config.js
+    includeModules: true
+    packager: yarn
+
