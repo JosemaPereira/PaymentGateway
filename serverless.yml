@@ -8,7 +8,16 @@ provider:
   name: aws
   runtime: nodejs8.10
   stage: dev
-  region: us-east-1
+  region: us-east-2
+  profile: tue
+  deploymentBucket:
+    serverSideEncryption: AES256
+    tags:
+      key1: Pasarelas
+      key2: Pagos
+  deploymentPrefix: serverless.${self:service}
+  tracing:
+    lambda: true
 
 functions:
   health:

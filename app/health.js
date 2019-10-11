@@ -1,7 +1,7 @@
 import moment from 'moment';
 import { Response } from '../services';
 
-export const handler = async (event, context) => {
+export const handler = async () => {
   const body = await new Promise(resolve => {
     setTimeout(() => {
       resolve(`Ok - ${moment()}`);
